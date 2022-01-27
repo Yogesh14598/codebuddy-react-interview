@@ -2,7 +2,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 const Home = () => {
   const history = useHistory();
@@ -15,7 +15,9 @@ const Home = () => {
         <h1>React + Bootstrap v4</h1>
         <p>React template with Bootstrap version v4</p>
         <p>
-          <Button variant="primary">Learn more</Button>
+          <Link to="/form1" className="">
+            <Button variant="primary">Fill Form</Button>
+          </Link>
         </p>
       </Jumbotron>
       <Container>
